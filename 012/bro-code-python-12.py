@@ -1,13 +1,10 @@
-#print(help(str))
+#conditional expression
 
+#number1=int(input("Enter your number:"))
+number2=int(input("Enter your number:"))
+number3=18
 
-full_name=input("Enter your full name:")
+#print("high number" if number1 >= 0 else "low number")
+result = "kid" if number2 >= number3 else "adult"
 
-if len(full_name) > 10:
-    print("your full name contains more then 10 characters")
-elif not full_name.find(" ") == -1:
-    print("your full name contains spaces")
-elif not full_name.isalpha():
-    print("your full name contains numbers")
-else:
-    print(f"Hello {full_name}")
+print(result)

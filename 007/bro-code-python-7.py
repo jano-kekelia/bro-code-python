@@ -1,14 +1,10 @@
-#python calculator *,/,+,-,=.
+#if, else, elif.
 
-operator=input("Enter the operator (*,/,+,-,=.):")
-Number1=int(input("Enter your 1 number:"))
-Number2=int(input("Enter your 2 number:"))
+age=int(input("Enter your age:"))
 
-if operator == "+":
-    print( Number1 + Number2 )
-elif operator == "-":
-    print(Number1 - Number2)
-elif operator == "/":
-    print(Number1 / Number2)
-elif operator == "*":
-    print(Number1 * Number2)
+if age >= 60:
+    print("you are old")
+elif age >= 18:
+    print("you are adult")
+elif age <= 18:
+    print("you are too young")

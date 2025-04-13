@@ -1,10 +1,23 @@
-#nested loop (outer loop, inner loop.)
+#import time
+import time
 
-rows = int(input("enter rows:"))
-columns = int(input("enter columns:"))
-symbol = input("enter symbol:")
+the_time=int(input("enter the time (in seconds):"))
 
-for i in range(rows):
-    for u in range(columns):
-        print(symbol, end="; ")
-    print() 
+for i in range(0, the_time):
+    print(i)
+    time.sleep(0,1)
+
+print("Time's up")
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+my_time= int(input("Enter the time (in seconds)"))
+
+for i in range(my_time, 0, -1):
+    seconds = i % 60 
+    minutes = int( i /60 ) % 60
+    hours = int( i / 3600 )% 24
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+    time.sleep(0.5)
+
+print("time's up")

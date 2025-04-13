@@ -1,12 +1,13 @@
-#indexing: start, end, step.
-
-Number="Hello-i'm your-new teacher-my-name-is-Davit"
-
-print(Number[0:9])
-print(Number[0:20])
-print(Number[-1])
-print(Number[::5])
-print(Number[:20])
-print(Number[0:])
+#print(help(str))
 
 
+full_name=input("Enter your full name:")
+
+if len(full_name) > 10:
+    print("your full name contains more then 10 characters")
+elif not full_name.find(" ") == -1:
+    print("your full name contains spaces")
+elif not full_name.isalpha():
+    print("your full name contains numbers")
+else:
+    print(f"Hello {full_name}")

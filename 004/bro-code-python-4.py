@@ -1,10 +1,9 @@
-#mobile game: fill the empty words
+name= input("what's your name?: ")
+age=input("what's your age?:")
 
-N1=input("Enter your word:")
-N2=input("Enter your word:")
-N3=input("Enter your word:")
+print(f"hello {name}!")
+print(f"you are a {age} year old!")
 
+age= int(age) + 4
 
-print(f"Today i don't go to school beacuse i was {N1}")
-print(f"now i'm doing my programing {N2}")
-print(f"Next day i will show my {N3} to a teacher")
+print("you will be 18 years old in 4 years")

@@ -1,9 +1,10 @@
-name= input("what's your name?: ")
-age=input("what's your age?:")
+#str(), bool(), float(), int()
 
-print(f"hello {name}!")
-print(f"you are a {age} year old!")
+string="hello"
+integer=20
+float=10.5
+boolean= True
 
-age= int(age) + 4
+float= str(float)
 
-print("you will be 18 years old in 4 years")
+print(type(float))

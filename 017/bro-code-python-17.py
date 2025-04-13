@@ -1,11 +1,11 @@
-#for loops
+#python compound interest calculator
 
-for i in range(0, 21, 2):
-    print("hello")
+principle = 0
+rate = 0
+time = 0
 
-#-----------------------------------------------------------------------------------------------------------------------------------------------------
-for i in range(1, 21):
-    if i == 13:
-        break
-    else:
-        print(i)
+while principle <= 0:
+    principle = float(input("Enter the principle amount:"))
+    if principle <= 0:
+        print("princile can't be less or equal to zero")
+        
